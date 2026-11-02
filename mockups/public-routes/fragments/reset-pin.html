@@ -1,0 +1,49 @@
+<section class="screen screen--form" aria-labelledby="pin-title">
+    <header class="screen__head">
+        <div class="steps" aria-label="Password recovery steps">
+            <span class="step is-done"><span class="step__num"><i data-lucide="check" aria-hidden="true"></i></span> Request</span>
+            <span class="step__line" aria-hidden="true"></span>
+            <span class="step is-active"><span class="step__num">02</span> Verify</span>
+        </div>
+        <p class="eyebrow">
+            <span class="eyebrow__icon"><i data-lucide="shield-check" aria-hidden="true"></i></span>
+            Account recovery
+        </p>
+        <h1 id="pin-title">Enter your PIN</h1>
+        <p class="lede">A 6-digit recovery PIN was created on your server. Enter it below to set a new password.</p>
+    </header>
+
+    <form class="form" data-mock>
+        <div class="field">
+            <label for="pin-1">Recovery PIN</label>
+            <div class="pin-row">
+                <input class="pin" id="pin-1" data-pin type="text" inputmode="numeric" maxlength="1" aria-label="PIN digit 1">
+                <input class="pin" data-pin type="text" inputmode="numeric" maxlength="1" aria-label="PIN digit 2">
+                <input class="pin" data-pin type="text" inputmode="numeric" maxlength="1" aria-label="PIN digit 3">
+                <input class="pin" data-pin type="text" inputmode="numeric" maxlength="1" aria-label="PIN digit 4">
+                <input class="pin" data-pin type="text" inputmode="numeric" maxlength="1" aria-label="PIN digit 5">
+                <input class="pin" data-pin type="text" inputmode="numeric" maxlength="1" aria-label="PIN digit 6">
+            </div>
+            <p class="field__help">
+                <i data-lucide="timer" aria-hidden="true"></i>
+                The PIN expires 10 minutes after it is created.
+            </p>
+        </div>
+
+        <div class="form__actions">
+            <button class="btn btn--primary btn--block" type="submit">
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+                Verify and reset password
+            </button>
+            <a class="btn btn--ghost btn--block" href="/login" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+                Back to sign in
+            </a>
+        </div>
+    </form>
+
+    <div class="hint-card">
+        <i data-lucide="info" aria-hidden="true"></i>
+        <p>The PIN file is created in your server&rsquo;s configuration directory. Never share it with anyone.</p>
+    </div>
+</section>

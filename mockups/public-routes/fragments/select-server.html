@@ -1,0 +1,53 @@
+<section class="screen" aria-labelledby="select-server-title">
+    <header class="screen__head">
+        <p class="eyebrow">
+            <span class="eyebrow__icon"><i data-lucide="hard-drive" aria-hidden="true"></i></span>
+            Step 00 / Saved servers
+        </p>
+        <h1 id="select-server-title">Choose a server</h1>
+        <p class="lede">Two servers are saved on this device. Pick one to continue to its sign-in screen.</p>
+    </header>
+
+    <div class="server-list">
+        <a class="server-card is-current" href="/login" data-server="Living Room" data-server-url="media.local" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="server-card__icon"><i data-lucide="server" aria-hidden="true"></i></span>
+            <span class="server-card__body">
+                <span class="server-card__name">Living Room</span>
+                <span class="server-card__url">http://media.local:8096</span>
+            </span>
+            <span class="badge-current">Current</span>
+            <span class="server-card__meta"><span class="status-dot" aria-hidden="true"></span> 12 ms</span>
+            <span class="server-card__chevron" aria-hidden="true"><i data-lucide="chevron-right"></i></span>
+        </a>
+
+        <a class="server-card" href="/login" data-server="Cabin NAS" data-server-url="cinema.example.net" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="server-card__icon"><i data-lucide="cloud" aria-hidden="true"></i></span>
+            <span class="server-card__body">
+                <span class="server-card__name">Cabin NAS</span>
+                <span class="server-card__url">https://cinema.example.net</span>
+            </span>
+            <span class="server-card__meta"><span class="status-dot status-dot--away" aria-hidden="true"></span> 84 ms</span>
+            <span class="server-card__chevron" aria-hidden="true"><i data-lucide="chevron-right"></i></span>
+        </a>
+
+        <a class="server-card" href="/login" data-server="Dev Box" data-server-url="localhost:8096" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="server-card__icon"><i data-lucide="terminal" aria-hidden="true"></i></span>
+            <span class="server-card__body">
+                <span class="server-card__name">Dev Box</span>
+                <span class="server-card__url">http://localhost:8096</span>
+            </span>
+            <span class="server-card__meta server-card__meta--offline"><span class="status-dot status-dot--off" aria-hidden="true"></span> Offline</span>
+            <span class="server-card__chevron" aria-hidden="true"><i data-lucide="chevron-right"></i></span>
+        </a>
+    </div>
+
+    <a class="btn btn--ghost btn--block" href="/addserver" hx-get="/addserver" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+        <i data-lucide="plus" aria-hidden="true"></i>
+        Add another server
+    </a>
+
+    <div class="disclaimer">
+        <i data-lucide="shield-check" aria-hidden="true"></i>
+        <p>Saved servers are stored on this device only. Remove them by clearing your browser&rsquo;s site data.</p>
+    </div>
+</section>

@@ -1,0 +1,68 @@
+<section class="screen" aria-labelledby="login-title">
+    <header class="screen__head">
+        <p class="eyebrow">
+            <span class="eyebrow__icon"><i data-lucide="users-round" aria-hidden="true"></i></span>
+            Step 01 / Profiles
+        </p>
+        <h1 id="login-title">Who&rsquo;s watching?</h1>
+        <p class="lede">Pick a profile to jump back into your library, or sign in with a password.</p>
+    </header>
+
+    <div class="profiles" aria-label="Profiles">
+        <button type="button" class="profile" data-mock-label="Profile sign-in">
+            <span class="avatar avatar--maya" aria-hidden="true">M</span>
+            <span class="profile__body">
+                <span class="profile__name">Maya</span>
+                <span class="profile__meta"><span class="status-dot" aria-hidden="true"></span> Ready</span>
+            </span>
+            <span class="profile__go" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
+        </button>
+
+        <button type="button" class="profile" data-mock-label="Password sign-in">
+            <span class="avatar avatar--leo" aria-hidden="true">L</span>
+            <span class="profile__body">
+                <span class="profile__name">Leo</span>
+                <span class="profile__meta"><i data-lucide="lock-keyhole" aria-hidden="true"></i> Password</span>
+            </span>
+            <span class="profile__go" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
+        </button>
+
+        <button type="button" class="profile" data-mock-label="Guest access">
+            <span class="avatar avatar--sam" aria-hidden="true">S</span>
+            <span class="profile__body">
+                <span class="profile__name">Sam</span>
+                <span class="profile__meta"><span class="status-dot status-dot--guest" aria-hidden="true"></span> Guest</span>
+            </span>
+            <span class="profile__go" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
+        </button>
+    </div>
+
+    <div class="or"><span>or continue with</span></div>
+
+    <div class="button-row">
+        <a class="btn btn--primary" href="/login/manual" hx-get="/login/manual" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <i data-lucide="key-round" aria-hidden="true"></i>
+            Manual sign-in
+        </a>
+        <a class="btn btn--ghost" href="/quickconnect" hx-get="/quickconnect" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <i data-lucide="scan-line" aria-hidden="true"></i>
+            Quick Connect
+        </a>
+    </div>
+
+    <div class="utility-row">
+        <a href="/forgotpassword" hx-get="/forgotpassword" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <i data-lucide="life-buoy" aria-hidden="true"></i>
+            Forgot password?
+        </a>
+        <a href="/selectserver" hx-get="/selectserver" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <i data-lucide="hard-drive" aria-hidden="true"></i>
+            Change server
+        </a>
+    </div>
+
+    <div class="disclaimer">
+        <i data-lucide="shield-check" aria-hidden="true"></i>
+        <p>Guest access is enabled on this server. Public content is visible without an account.</p>
+    </div>
+</section>

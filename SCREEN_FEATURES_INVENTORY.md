@@ -28,6 +28,8 @@ This document catalogs all user-facing screens/routes and features to guide an H
 
 ## 1. Public Routes (Unauthenticated)
 
+> **HTMX mockup:** [`mockups/public-routes/`](mockups/public-routes/) — run `node mockups/public-routes/serve.mjs` and open <http://localhost:4173>. Includes profile picker, manual sign-in, Quick Connect, add/select server, forgot password, and PIN reset.
+
 ### Modern App Public
 | Route | Page/Handler | Type | Description |
 |---|---|---|---|

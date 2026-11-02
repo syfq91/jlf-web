@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} &middot; Jellyfin public routes</title>
+    <meta name="description" content="Visual htmx mockup of Jellyfin Web's public authentication routes.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23c9ff4d'/><path d='M10 10h12v3H10zm0 6h12v3H10zm0 6h8v2h-8z' fill='%23151a15'/></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@1.66.0/dist/umd/lucide.min.js" defer></script>
+    <script src="/app.js" defer></script>
+</head>
+<body hx-indicator=".loadbar">
+    <div class="page">
+        <aside class="rail" aria-label="Public route mockups">
+            <a class="rail__brand" href="/login" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="brand-mark"><i data-lucide="clapperboard" aria-hidden="true"></i></span>
+                <span>
+                    <strong>Jellyfin</strong>
+                    <small>Public routes</small>
+                </span>
+            </a>
+
+            <div class="rail__intro">
+                <p class="rail__kicker">Screen inventory 01</p>
+                <p>Unauthenticated entry points, rebuilt as hypermedia screens with htmx.</p>
+            </div>
+
+            <nav class="rail__nav" id="screen-nav" aria-label="Screens">
+                <a href="/login" data-route="/login" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="users-round" aria-hidden="true"></i>
+                    <span>Profiles <small>/login</small></span>
+                </a>
+                <a href="/login/manual" data-route="/login/manual" hx-get="/login/manual" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="key-round" aria-hidden="true"></i>
+                    <span>Manual sign-in <small>/login</small></span>
+                </a>
+                <a href="/quickconnect" data-route="/quickconnect" hx-get="/quickconnect" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="scan-line" aria-hidden="true"></i>
+                    <span>Quick Connect <small>/login</small></span>
+                </a>
+                <a href="/addserver" data-route="/addserver" hx-get="/addserver" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="server" aria-hidden="true"></i>
+                    <span>Add server <small>/addserver</small></span>
+                </a>
+                <a href="/selectserver" data-route="/selectserver" hx-get="/selectserver" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="hard-drive" aria-hidden="true"></i>
+                    <span>Select server <small>/selectserver</small></span>
+                </a>
+                <a href="/forgotpassword" data-route="/forgotpassword" hx-get="/forgotpassword" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="life-buoy" aria-hidden="true"></i>
+                    <span>Forgot password <small>/forgotpassword</small></span>
+                </a>
+                <a href="/forgotpasswordpin" data-route="/forgotpasswordpin" hx-get="/forgotpasswordpin" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="shield-check" aria-hidden="true"></i>
+                    <span>PIN reset <small>/forgotpasswordpin</small></span>
+                </a>
+            </nav>
+
+            <div class="rail__foot">
+                <span class="live-dot" aria-hidden="true"></span>
+                <p>Visual mockup only. Forms are intentionally inert.</p>
+            </div>
+        </aside>
+
+        <main class="stage">
+            <div class="stage__top">
+                <span class="stage__label">Preview / Public access</span>
+                <span class="stage__chip">htmx + Lucide</span>
+            </div>
+
+            <div class="device">
+                <div class="loadbar" aria-hidden="true"></div>
+
+                <header class="topbar">
+                    <a class="brand" href="/login" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                        <span class="brand-mark brand-mark--sm"><i data-lucide="clapperboard" aria-hidden="true"></i></span>
+                        <span class="brand__text">
+                            Jellyfin
+                            <small>media server</small>
+                        </span>
+                    </a>
+
+                    <div class="server-chip">
+                        <span class="live-dot" aria-hidden="true"></span>
+                        <span id="server-name">Living Room</span>
+                        <span class="server-chip__url" id="server-url">media.local</span>
+                        <a class="icon-btn" href="/selectserver" hx-get="/selectserver" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true" aria-label="Change server">
+                            <i data-lucide="chevrons-up-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </header>
+
+                <div id="screen">{{screen}}</div>
+
+                <footer class="device__foot">
+                    <span>Jellyfin 13.0.0 &middot; public routes mockup</span>
+                    <span>Unauthenticated flow</span>
+                </footer>
+            </div>
+
+            <p class="stage__note">Layout follows the Jellyfin public routes. The visual language is intentionally different.</p>
+        </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

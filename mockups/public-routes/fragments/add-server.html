@@ -1,0 +1,37 @@
+<section class="screen screen--form" aria-labelledby="add-server-title">
+    <header class="screen__head">
+        <p class="eyebrow">
+            <span class="eyebrow__icon"><i data-lucide="server" aria-hidden="true"></i></span>
+            Step 00 / Connection
+        </p>
+        <h1 id="add-server-title">Connect to a server</h1>
+        <p class="lede">Point Jellyfin at your media server. You can add more servers later.</p>
+    </header>
+
+    <form class="form" data-mock>
+        <div class="field">
+            <label for="server-host">Server address</label>
+            <input class="input" id="server-host" name="server" type="url" value="https://media.example.com" placeholder="http://192.168.1.10:8096" autocomplete="url" spellcheck="false">
+            <p class="field__help">
+                <i data-lucide="info" aria-hidden="true"></i>
+                Include the protocol and port if your server does not use a default.
+            </p>
+        </div>
+
+        <div class="form__actions">
+            <button class="btn btn--primary btn--block" type="submit">
+                <i data-lucide="plug-zap" aria-hidden="true"></i>
+                Connect
+            </button>
+            <a class="btn btn--ghost btn--block" href="/login" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+                Cancel
+            </a>
+        </div>
+    </form>
+
+    <div class="hint-card">
+        <i data-lucide="wifi" aria-hidden="true"></i>
+        <p>On the same network? Try <code>http://localhost:8096</code> or your server&rsquo;s local IP address.</p>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+<section class="screen screen--form" aria-labelledby="quick-title">
+    <header class="screen__head">
+        <p class="eyebrow">
+            <span class="eyebrow__icon"><i data-lucide="scan-line" aria-hidden="true"></i></span>
+            Step 01 / Quick Connect
+        </p>
+        <h1 id="quick-title">Quick Connect</h1>
+        <p class="lede">Enter this code on another device that is already signed in to your server.</p>
+    </header>
+
+    <div class="code-card">
+        <p class="code-card__label">Your one-time code</p>
+        <p class="code">7K4&ndash;P9Q</p>
+        <p class="code-card__hint">The code expires after 10 minutes.</p>
+    </div>
+
+    <div class="waiting" role="status">
+        <span class="waiting__dot" aria-hidden="true"></span>
+        Waiting for approval&hellip;
+    </div>
+
+    <div class="form__actions">
+        <a class="btn btn--ghost btn--block" href="/login" hx-get="/login" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <i data-lucide="arrow-left" aria-hidden="true"></i>
+            Cancel and go back
+        </a>
+    </div>
+
+    <div class="hint-card">
+        <i data-lucide="shield-check" aria-hidden="true"></i>
+        <p>This screen refreshes automatically once the code is approved. No password is ever typed on this device.</p>
+    </div>
+</section>
