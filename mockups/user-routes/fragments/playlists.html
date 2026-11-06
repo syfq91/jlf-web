@@ -1,0 +1,76 @@
+<div class="view">
+    <header class="page-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="list-music"></i> 7 playlists</p>
+            <h1>Playlists</h1>
+            <p class="lede">Mixes you have built by hand, plus smart lists that update themselves.</p>
+        </div>
+        <div class="head-actions">
+            <button class="btn btn--ghost" type="button" data-mock-label="Import playlist">
+                <i data-lucide="download" aria-hidden="true"></i> Import
+            </button>
+            <button class="btn btn--primary" type="button" data-mock-label="New playlist">
+                <i data-lucide="plus" aria-hidden="true"></i> New playlist
+            </button>
+        </div>
+    </header>
+
+    <div class="settings-list">
+        <a class="playlist-row" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="playlist-row__art"><i data-lucide="list-music" aria-hidden="true"></i></span>
+            <span class="playlist-row__body">
+                <span class="playlist-row__name">Late night coding</span>
+                <span class="playlist-row__meta">48 tracks &middot; 3 hr 12 min &middot; Updated today</span>
+            </span>
+            <span class="playlist-row__play"><i data-lucide="play" aria-hidden="true"></i></span>
+        </a>
+        <a class="playlist-row" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="playlist-row__art" style="background: linear-gradient(145deg, #402a1c, #120b07); color: var(--lime)"><i data-lucide="list-music" aria-hidden="true"></i></span>
+            <span class="playlist-row__body">
+                <span class="playlist-row__name">Sunday morning</span>
+                <span class="playlist-row__meta">31 tracks &middot; 2 hr 04 min &middot; Updated 2 days ago</span>
+            </span>
+            <span class="playlist-row__play"><i data-lucide="play" aria-hidden="true"></i></span>
+        </a>
+        <a class="playlist-row" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="playlist-row__art" style="background: linear-gradient(145deg, #22343a, #0a1012); color: var(--lime)"><i data-lucide="list-music" aria-hidden="true"></i></span>
+            <span class="playlist-row__body">
+                <span class="playlist-row__name">Jazz deep cuts</span>
+                <span class="playlist-row__meta">62 tracks &middot; 4 hr 38 min &middot; Updated last week</span>
+            </span>
+            <span class="playlist-row__play"><i data-lucide="play" aria-hidden="true"></i></span>
+        </a>
+        <a class="playlist-row" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="playlist-row__art" style="background: linear-gradient(145deg, #3b2540, #110a13); color: var(--lime)"><i data-lucide="list-music" aria-hidden="true"></i></span>
+            <span class="playlist-row__body">
+                <span class="playlist-row__name">Road trip 2026</span>
+                <span class="playlist-row__meta">87 tracks &middot; 5 hr 51 min &middot; Updated last month</span>
+            </span>
+            <span class="playlist-row__play"><i data-lucide="play" aria-hidden="true"></i></span>
+        </a>
+        <a class="playlist-row" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="playlist-row__art" style="background: linear-gradient(145deg, #2c3b24, #0a1108); color: var(--lime)"><i data-lucide="list-music" aria-hidden="true"></i></span>
+            <span class="playlist-row__body">
+                <span class="playlist-row__name">Focus / no lyrics</span>
+                <span class="playlist-row__meta">120 tracks &middot; 7 hr 22 min &middot; Smart playlist</span>
+            </span>
+            <span class="playlist-row__play"><i data-lucide="play" aria-hidden="true"></i></span>
+        </a>
+        <a class="playlist-row" href="/playlists">
+            <span class="playlist-row__art" style="background: linear-gradient(145deg, #443a1e, #141106); color: var(--lime)"><i data-lucide="list-music" aria-hidden="true"></i></span>
+            <span class="playlist-row__body">
+                <span class="playlist-row__name">Movie night scores</span>
+                <span class="playlist-row__meta">44 tracks &middot; 2 hr 47 min &middot; Smart playlist</span>
+            </span>
+            <span class="playlist-row__play"><i data-lucide="play" aria-hidden="true"></i></span>
+        </a>
+        <a class="playlist-row" href="/playlists">
+            <span class="playlist-row__art" style="background: linear-gradient(145deg, #3d2a2a, #120b0b); color: var(--lime)"><i data-lucide="list-music" aria-hidden="true"></i></span>
+            <span class="playlist-row__body">
+                <span class="playlist-row__name">Recently added</span>
+                <span class="playlist-row__meta">25 tracks &middot; Auto-generated &middot; Updated hourly</span>
+            </span>
+            <span class="playlist-row__play"><i data-lucide="play" aria-hidden="true"></i></span>
+        </a>
+    </div>
+</div>

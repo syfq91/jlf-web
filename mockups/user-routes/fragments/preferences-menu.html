@@ -1,0 +1,123 @@
+<div class="view view--settings">
+    <header class="page-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="settings"></i> Account</p>
+            <h1>Settings</h1>
+            <p class="lede">Tune how Jellyfin looks and behaves for Maya on this device.</p>
+        </div>
+    </header>
+
+    <section class="profile-strip">
+        <span class="avatar avatar--lg" aria-hidden="true">M</span>
+        <div>
+            <h2>Maya Chen</h2>
+            <p>Administrator &middot; last active just now</p>
+        </div>
+        <a class="btn btn--ghost" href="/userprofile" hx-get="/userprofile" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <i data-lucide="user-round" aria-hidden="true"></i> Edit profile
+        </a>
+    </section>
+
+    <div class="settings-list">
+        <section class="settings-group">
+            <p class="settings-group__label">Personalisation</p>
+            <a class="settings-row" href="/userprofile" hx-get="/userprofile" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="settings-row__icon"><i data-lucide="user-round" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Profile</span>
+                    <span class="settings-row__desc">Name, avatar, password, and account access.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+            <a class="settings-row" href="/mypreferencesdisplay" hx-get="/mypreferencesdisplay" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="settings-row__icon"><i data-lucide="monitor" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Display</span>
+                    <span class="settings-row__desc">Theme, layout density, language, and screensavers.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+            <a class="settings-row" href="/mypreferencesdisplay" hx-get="/mypreferencesdisplay" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="settings-row__icon"><i data-lucide="house" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Home screen</span>
+                    <span class="settings-row__desc">Choose sections, ordering, and what appears on the dashboard.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+            <a class="settings-row" href="/mypreferencesdisplay" hx-get="/mypreferencesdisplay" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="settings-row__icon"><i data-lucide="play" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Playback</span>
+                    <span class="settings-row__desc">Streaming quality, autoplay, and skip behaviour.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+            <a class="settings-row" href="/mypreferencesdisplay" hx-get="/mypreferencesdisplay" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="settings-row__icon"><i data-lucide="subtitles" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Subtitles</span>
+                    <span class="settings-row__desc">Default language, caption styling, and fallback tracks.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+        </section>
+
+        <section class="settings-group">
+            <p class="settings-group__label">Server</p>
+            <a class="settings-row" href="/mypreferencesmenu" data-mock-label="Server dashboard">
+                <span class="settings-row__icon"><i data-lucide="layout-grid" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Server dashboard</span>
+                    <span class="settings-row__desc">Libraries, users, transcoding, and system health.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+            <a class="settings-row" href="/mypreferencesmenu" data-mock-label="Devices">
+                <span class="settings-row__icon"><i data-lucide="smartphone" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Devices</span>
+                    <span class="settings-row__desc">Review active sessions and revoke access.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+            <a class="settings-row" href="/mypreferencesmenu" data-mock-label="API keys">
+                <span class="settings-row__icon"><i data-lucide="key-round" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">API keys</span>
+                    <span class="settings-row__desc">Manage integrations and third-party access tokens.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+        </section>
+
+        <section class="settings-group">
+            <p class="settings-group__label">Client</p>
+            <a class="settings-row" href="/mypreferencesmenu" data-mock-label="Quick Connect">
+                <span class="settings-row__icon"><i data-lucide="scan-line" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">Quick Connect</span>
+                    <span class="settings-row__desc">Authorise a device using a short code.</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+            <a class="settings-row" href="/mypreferencesmenu" data-mock-label="About">
+                <span class="settings-row__icon"><i data-lucide="info" aria-hidden="true"></i></span>
+                <span class="settings-row__body">
+                    <span class="settings-row__title">About</span>
+                    <span class="settings-row__desc">Jellyfin Web 10.10.7 &middot; server 10.10.7</span>
+                </span>
+                <span class="settings-row__chev"><i data-lucide="chevron-right" aria-hidden="true"></i></span>
+            </a>
+        </section>
+    </div>
+
+    <section class="server-panel">
+        <span class="server-panel__icon"><i data-lucide="server" aria-hidden="true"></i></span>
+        <span class="server-panel__body">
+            <span class="server-panel__title">Jellyfin &middot; media.lan</span>
+            <span class="server-panel__meta">v10.10.7 &middot; 4 libraries &middot; 6 devices</span>
+        </span>
+        <span class="status-dot" aria-hidden="true"></span>
+    </section>
+</div>

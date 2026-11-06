@@ -1,0 +1,116 @@
+<div class="view">
+    <header class="library-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="video"></i> Library &middot; 1,462 clips</p>
+            <h1>Home Videos</h1>
+            <p class="lede">Family clips, travel footage, and photo collections.</p>
+        </div>
+        <div class="toolbar">
+            <button class="tool-btn" type="button" data-mock-label="Filters">
+                <i data-lucide="filter" aria-hidden="true"></i> Filters
+            </button>
+            <button class="tool-btn" type="button" data-mock-label="Sort">
+                <i data-lucide="arrow-up-down" aria-hidden="true"></i> Date taken
+            </button>
+            <button class="tool-btn" type="button" data-mock-label="Upload">
+                <i data-lucide="upload" aria-hidden="true"></i> Upload
+            </button>
+        </div>
+    </header>
+
+    <div class="segmented" style="margin-bottom: 24px">
+        <label><input type="radio" name="hv-tab" checked><span>All</span></label>
+        <label><input type="radio" name="hv-tab"><span>Videos</span></label>
+        <label><input type="radio" name="hv-tab"><span>Photos</span></label>
+        <label><input type="radio" name="hv-tab"><span>Albums</span></label>
+    </div>
+
+    <section class="row" style="margin-top: 0">
+        <div class="row__head">
+            <h2 class="row__title">Collections</h2>
+            <span class="row__more">Grouped by folder</span>
+        </div>
+        <div class="rail rail--wide">
+            <a class="media-card" href="/homevideos">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #2f3b44, #0a0f12)">
+                    <span class="poster__art"><i data-lucide="image" aria-hidden="true"></i></span>
+                    <span class="poster__title">Summer in Hokkaido</span>
+                    <span class="poster__badge">84 items</span>
+                </span>
+                <span class="media-card__title">Summer in Hokkaido</span>
+                <span class="media-card__meta">Jul 2026 &middot; 84 items</span>
+            </a>
+            <a class="media-card" href="/homevideos">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #40351f, #140f06)">
+                    <span class="poster__art"><i data-lucide="image" aria-hidden="true"></i></span>
+                    <span class="poster__title">Leo's first birthday</span>
+                    <span class="poster__badge">36 items</span>
+                </span>
+                <span class="media-card__title">Leo's first birthday</span>
+                <span class="media-card__meta">May 2026 &middot; 36 items</span>
+            </a>
+            <a class="media-card" href="/homevideos">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #2a3b2e, #08120b)">
+                    <span class="poster__art"><i data-lucide="image" aria-hidden="true"></i></span>
+                    <span class="poster__title">Coast trip</span>
+                    <span class="poster__badge">112 items</span>
+                </span>
+                <span class="media-card__title">Coast trip</span>
+                <span class="media-card__meta">Mar 2026 &middot; 112 items</span>
+            </a>
+            <a class="media-card" href="/homevideos">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #3f2a2a, #120b0b)">
+                    <span class="poster__art"><i data-lucide="image" aria-hidden="true"></i></span>
+                    <span class="poster__title">Kitchen renovation</span>
+                    <span class="poster__badge">58 items</span>
+                </span>
+                <span class="media-card__title">Kitchen renovation</span>
+                <span class="media-card__meta">Jan 2026 &middot; 58 items</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="row__head">
+            <h2 class="row__title">Recent clips</h2>
+            <span class="row__more">Newest first</span>
+        </div>
+        <div class="library-grid">
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #33424a, #0b1113)">
+                    <span class="poster__art"><i data-lucide="video"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Morning at the lake</span>
+                </span>
+                <span class="media-card__title">Morning at the lake</span>
+                <span class="media-card__meta">2:14 &middot; Jul 18, 2026</span>
+            </a>
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #46321f, #150e07)">
+                    <span class="poster__art"><i data-lucide="video"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Leo's first steps</span>
+                </span>
+                <span class="media-card__title">Leo's first steps</span>
+                <span class="media-card__meta">0:48 &middot; Jun 02, 2026</span>
+            </a>
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #2c3b28, #0a1109)">
+                    <span class="poster__art"><i data-lucide="video"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Garden timelapse</span>
+                </span>
+                <span class="media-card__title">Garden timelapse</span>
+                <span class="media-card__meta">1:32 &middot; May 21, 2026</span>
+            </a>
+            <a class="media-card" href="/homevideos">
+                <span class="poster poster--wide" style="--poster: linear-gradient(130deg, #3d2a40, #110a12)">
+                    <span class="poster__art"><i data-lucide="image"></i></span>
+                    <span class="poster__title">Kitchen, finished</span>
+                </span>
+                <span class="media-card__title">Kitchen, finished</span>
+                <span class="media-card__meta">Photo &middot; May 09, 2026</span>
+            </a>
+        </div>
+    </section>
+</div>

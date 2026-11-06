@@ -1,0 +1,130 @@
+<div class="view view--settings">
+    <header class="page-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="user-round"></i> Account &middot; Profile</p>
+            <h1>Your profile</h1>
+            <p class="lede">Update how you appear to other users on this server.</p>
+        </div>
+        <div class="head-actions">
+            <a class="btn btn--ghost" href="/mypreferencesmenu" hx-get="/mypreferencesmenu" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <i data-lucide="settings" aria-hidden="true"></i> Settings
+            </a>
+        </div>
+    </header>
+
+    <div class="profile-layout">
+        <aside class="profile-card">
+            <span class="avatar avatar--xl" aria-hidden="true">M</span>
+            <h2>Maya Chen</h2>
+            <p class="profile-card__handle">@maya &middot; Administrator</p>
+
+            <dl class="profile-facts">
+                <div>
+                    <dt>Member since</dt>
+                    <dd>Mar 2021</dd>
+                </div>
+                <div>
+                    <dt>Last active</dt>
+                    <dd>Just now</dd>
+                </div>
+                <div>
+                    <dt>Library access</dt>
+                    <dd>All 4</dd>
+                </div>
+                <div>
+                    <dt>Devices</dt>
+                    <dd>6 active</dd>
+                </div>
+            </dl>
+
+            <div class="profile-card__actions">
+                <button class="btn btn--primary btn--block" type="button" data-mock-label="Change avatar">
+                    <i data-lucide="upload" aria-hidden="true"></i> Change avatar
+                </button>
+                <button class="btn btn--ghost btn--block" type="button" data-mock-label="Remove avatar">
+                    <i data-lucide="trash-2" aria-hidden="true"></i> Remove avatar
+                </button>
+            </div>
+        </aside>
+
+        <form class="profile-form" data-mock>
+            <section class="panel">
+                <h2>Details</h2>
+                <p class="panel__lede">This name and avatar appear anywhere your activity is shown.</p>
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="display-name">Display name</label>
+                        <input class="input" id="display-name" type="text" value="Maya Chen">
+                    </div>
+                    <div class="field">
+                        <label for="username">Username</label>
+                        <input class="input" id="username" type="text" value="maya">
+                    </div>
+                </div>
+                <div class="field" style="margin-top: 13px">
+                    <label for="email">Email address</label>
+                    <input class="input" id="email" type="email" value="maya@example.com">
+                    <p class="field__help">Used only for password recovery on servers with email configured.</p>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Access</h2>
+                <p class="panel__lede">Administrators can change library permissions and remote access for this account.</p>
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Allow remote connections</span>
+                        <span class="switch-row__desc">Connect to this server from outside the local network.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox" checked><span></span></label>
+                </div>
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Allow media playback</span>
+                        <span class="switch-row__desc">Play films, shows, music, and books on this account.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox" checked><span></span></label>
+                </div>
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Allow audio transcoding</span>
+                        <span class="switch-row__desc">Convert audio when the device cannot play the source format.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox" checked><span></span></label>
+                </div>
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Allow video transcoding</span>
+                        <span class="switch-row__desc">Convert video for bandwidth or codec limits.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox"><span></span></label>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Password</h2>
+                <p class="panel__lede">Leave these fields blank to keep your current password.</p>
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="current-password">Current password</label>
+                        <input class="input" id="current-password" type="password" placeholder="••••••••">
+                    </div>
+                    <div class="field">
+                        <label for="new-password">New password</label>
+                        <input class="input" id="new-password" type="password" placeholder="At least 8 characters">
+                    </div>
+                </div>
+            </section>
+
+            <div class="save-bar">
+                <button class="btn btn--primary" type="submit">
+                    <i data-lucide="check" aria-hidden="true"></i> Save profile
+                </button>
+                <button class="btn btn--ghost" type="button" data-mock-label="Cancel">
+                    Cancel
+                </button>
+                <span class="save-bar__note">Password changes sign out<br>other devices.</span>
+            </div>
+        </form>
+    </div>
+</div>

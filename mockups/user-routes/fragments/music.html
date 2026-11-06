@@ -1,0 +1,114 @@
+<div class="view">
+    <header class="library-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="disc-3"></i> Library &middot; 1,204 albums</p>
+            <h1>Music</h1>
+            <p class="lede">Albums, artists, and playlists from your music collection.</p>
+        </div>
+        <div class="toolbar">
+            <button class="tool-btn" type="button" data-mock-label="Filters">
+                <i data-lucide="filter" aria-hidden="true"></i> Filters
+            </button>
+            <button class="tool-btn" type="button" data-mock-label="Sort">
+                <i data-lucide="arrow-up-down" aria-hidden="true"></i> Recently added
+            </button>
+            <button class="tool-btn" type="button" data-mock-label="Shuffle all">
+                <i data-lucide="shuffle" aria-hidden="true"></i> Shuffle
+            </button>
+        </div>
+    </header>
+
+    <div class="segmented" style="margin-bottom: 24px">
+        <label><input type="radio" name="music-tab" checked><span>Albums</span></label>
+        <label><input type="radio" name="music-tab"><span>Artists</span></label>
+        <label><input type="radio" name="music-tab"><span>Genres</span></label>
+        <label><input type="radio" name="music-tab"><span>Songs</span></label>
+        <label><input type="radio" name="music-tab"><span>Playlists</span></label>
+    </div>
+
+    <section class="row" style="margin-top: 0">
+        <div class="row__head">
+            <h2 class="row__title">Recently played</h2>
+            <button class="row__more" type="button" data-mock-label="See all albums" style="background: none; border: 0; cursor: pointer">
+                See all <i data-lucide="chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="rail">
+            <a class="media-card" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #58341f, #170c06)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Blonde</span>
+                </span>
+                <span class="media-card__title">Blonde</span>
+                <span class="media-card__meta">Frank Ocean &middot; 2016</span>
+            </a>
+            <a class="media-card" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #1f3c44, #071114)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">In Rainbows</span>
+                </span>
+                <span class="media-card__title">In Rainbows</span>
+                <span class="media-card__meta">Radiohead &middot; 2007</span>
+            </a>
+            <a class="media-card" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #3f2438, #120810)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Rumours</span>
+                </span>
+                <span class="media-card__title">Rumours</span>
+                <span class="media-card__meta">Fleetwood Mac &middot; 1977</span>
+            </a>
+            <a class="media-card" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #33401f, #0d1107)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">The Köln Concert</span>
+                </span>
+                <span class="media-card__title">The Köln Concert</span>
+                <span class="media-card__meta">Keith Jarrett &middot; 1975</span>
+            </a>
+            <a class="media-card" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #40352a, #120e09)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Blue</span>
+                </span>
+                <span class="media-card__title">Blue</span>
+                <span class="media-card__meta">Joni Mitchell &middot; 1971</span>
+            </a>
+            <a class="media-card" href="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #2a2f44, #0a0c14)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Vespertine</span>
+                </span>
+                <span class="media-card__title">Vespertine</span>
+                <span class="media-card__meta">Björk &middot; 2001</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="row__head">
+            <h2 class="row__title">All albums</h2>
+            <span class="row__more">Sorted by recently added</span>
+        </div>
+        <div class="library-grid library-grid--compact">
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #2f3a22, #0b1007)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Kid A</span></span><span class="media-card__title">Kid A</span><span class="media-card__meta">Radiohead &middot; 2000</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #4a2d2a, #140b0a)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">The Miseducation</span></span><span class="media-card__title">The Miseducation of Lauryn Hill</span><span class="media-card__meta">Lauryn Hill &middot; 1998</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #243a44, #081114)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Homogenic</span></span><span class="media-card__title">Homogenic</span><span class="media-card__meta">Björk &middot; 1997</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #443a1a, #140f05)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Illinois</span></span><span class="media-card__title">Illinois</span><span class="media-card__meta">Sufjan Stevens &middot; 2005</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #3a2440, #110a14)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">To Pimp a Butterfly</span></span><span class="media-card__title">To Pimp a Butterfly</span><span class="media-card__meta">Kendrick Lamar &middot; 2015</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #29402f, #08120b)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Fetch the Bolt Cutters</span></span><span class="media-card__title">Fetch the Bolt Cutters</span><span class="media-card__meta">Fiona Apple &middot; 2020</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #402a2a, #120c0c)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Yankee Hotel Foxtrot</span></span><span class="media-card__title">Yankee Hotel Foxtrot</span><span class="media-card__meta">Wilco &middot; 2002</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #2a3440, #0a0d12)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Selected Ambient Works</span></span><span class="media-card__title">Selected Ambient Works 85–92</span><span class="media-card__meta">Aphex Twin &middot; 1992</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #3d3520, #110f08)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Songs in the Key of Life</span></span><span class="media-card__title">Songs in the Key of Life</span><span class="media-card__meta">Stevie Wonder &middot; 1976</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #35243f, #100a13)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Purple Rain</span></span><span class="media-card__title">Purple Rain</span><span class="media-card__meta">Prince &middot; 1984</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #1f3d38, #07110f)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Aja</span></span><span class="media-card__title">Aja</span><span class="media-card__meta">Steely Dan &middot; 1977</span></a>
+            <a class="media-card" href="/music"><span class="poster poster--square" style="--poster: linear-gradient(145deg, #463022, #150e08)"><span class="poster__art"><i data-lucide="disc-3"></i></span><span class="poster__play"><span><i data-lucide="play"></i></span></span><span class="poster__title">Back to Black</span></span><span class="media-card__title">Back to Black</span><span class="media-card__meta">Amy Winehouse &middot; 2006</span></a>
+        </div>
+    </section>
+</div>

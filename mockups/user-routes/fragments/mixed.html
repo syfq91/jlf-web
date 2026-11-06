@@ -1,0 +1,157 @@
+<div class="view">
+    <header class="library-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="shapes"></i> Library &middot; everything</p>
+            <h1>Mixed Media</h1>
+            <p class="lede">Every item type in one place — films, series, albums, books, and clips.</p>
+        </div>
+        <div class="toolbar">
+            <button class="tool-btn" type="button" data-mock-label="Filters">
+                <i data-lucide="filter" aria-hidden="true"></i> Filters
+            </button>
+            <button class="tool-btn" type="button" data-mock-label="Sort">
+                <i data-lucide="arrow-up-down" aria-hidden="true"></i> Recently added
+            </button>
+        </div>
+    </header>
+
+    <div class="segmented" style="margin-bottom: 24px">
+        <label><input type="radio" name="mixed-tab" checked><span>All</span></label>
+        <label><input type="radio" name="mixed-tab"><span>Movies</span></label>
+        <label><input type="radio" name="mixed-tab"><span>Shows</span></label>
+        <label><input type="radio" name="mixed-tab"><span>Music</span></label>
+        <label><input type="radio" name="mixed-tab"><span>Books</span></label>
+        <label><input type="radio" name="mixed-tab"><span>Videos</span></label>
+    </div>
+
+    <div class="library-grid">
+        <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="poster" style="--poster: linear-gradient(160deg, #4a3a24, #15120c)">
+                <span class="poster__art"><i data-lucide="film"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Dune: Part Two</span>
+                <span class="poster__badge">Movie</span>
+            </span>
+            <span class="media-card__title">Dune: Part Two</span>
+            <span class="media-card__meta">2024 &middot; Sci-Fi</span>
+        </a>
+        <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="poster" style="--poster: linear-gradient(160deg, #22343a, #0b1012)">
+                <span class="poster__art"><i data-lucide="tv"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Severance</span>
+                <span class="poster__badge">Series</span>
+            </span>
+            <span class="media-card__title">Severance</span>
+            <span class="media-card__meta">2 seasons &middot; Apple TV+</span>
+        </a>
+        <a class="media-card" href="/music">
+            <span class="poster" style="--poster: linear-gradient(145deg, #58341f, #170c06)">
+                <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Blonde</span>
+                <span class="poster__badge">Album</span>
+            </span>
+            <span class="media-card__title">Blonde</span>
+            <span class="media-card__meta">Frank Ocean &middot; 2016</span>
+        </a>
+        <a class="media-card" href="/books">
+            <span class="poster" style="--poster: linear-gradient(160deg, #3b3448, #100d14)">
+                <span class="poster__art"><i data-lucide="book-open"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Piranesi</span>
+                <span class="poster__badge">Book</span>
+            </span>
+            <span class="media-card__title">Piranesi</span>
+            <span class="media-card__meta">Susanna Clarke &middot; 2020</span>
+        </a>
+        <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="poster" style="--poster: linear-gradient(160deg, #3b2222, #120b0b)">
+                <span class="poster__art"><i data-lucide="tv"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">The Bear</span>
+                <span class="poster__badge">Series</span>
+            </span>
+            <span class="media-card__title">The Bear</span>
+            <span class="media-card__meta">3 seasons &middot; FX</span>
+        </a>
+        <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="poster" style="--poster: linear-gradient(130deg, #4a2f1c, #120a06)">
+                <span class="poster__art"><i data-lucide="music-2"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Stop Making Sense</span>
+                <span class="poster__badge">Video</span>
+            </span>
+            <span class="media-card__title">Stop Making Sense</span>
+            <span class="media-card__meta">Talking Heads &middot; 1984</span>
+        </a>
+        <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="poster" style="--poster: linear-gradient(160deg, #2c2440, #0d0a14)">
+                <span class="poster__art"><i data-lucide="tv"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Fallout</span>
+                <span class="poster__badge">Series</span>
+            </span>
+            <span class="media-card__title">Fallout</span>
+            <span class="media-card__meta">1 season &middot; Prime Video</span>
+        </a>
+        <a class="media-card" href="/music">
+            <span class="poster" style="--poster: linear-gradient(145deg, #1f3c44, #071114)">
+                <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">In Rainbows</span>
+                <span class="poster__badge">Album</span>
+            </span>
+            <span class="media-card__title">In Rainbows</span>
+            <span class="media-card__meta">Radiohead &middot; 2007</span>
+        </a>
+        <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="poster" style="--poster: linear-gradient(160deg, #44301f, #150e08)">
+                <span class="poster__art"><i data-lucide="film"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Oppenheimer</span>
+                <span class="poster__badge">Movie</span>
+            </span>
+            <span class="media-card__title">Oppenheimer</span>
+            <span class="media-card__meta">2023 &middot; History</span>
+        </a>
+        <a class="media-card" href="/books">
+            <span class="poster" style="--poster: linear-gradient(160deg, #4a3c22, #151006)">
+                <span class="poster__art"><i data-lucide="book-open"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Dune</span>
+                <span class="poster__badge">Book</span>
+            </span>
+            <span class="media-card__title">Dune</span>
+            <span class="media-card__meta">Frank Herbert &middot; 1965</span>
+        </a>
+        <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+            <span class="poster" style="--poster: linear-gradient(160deg, #2b3a2a, #0b120a)">
+                <span class="poster__art"><i data-lucide="film"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">The Zone of Interest</span>
+                <span class="poster__badge">Movie</span>
+            </span>
+            <span class="media-card__title">The Zone of Interest</span>
+            <span class="media-card__meta">2023 &middot; Drama</span>
+        </a>
+        <a class="media-card" href="/music">
+            <span class="poster" style="--poster: linear-gradient(145deg, #40352a, #120e09)">
+                <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                <span class="poster__title">Blue</span>
+                <span class="poster__badge">Album</span>
+            </span>
+            <span class="media-card__title">Blue</span>
+            <span class="media-card__meta">Joni Mitchell &middot; 1971</span>
+        </a>
+    </div>
+
+    <footer class="pager">
+        <span>Showing 1–12 of 4,908</span>
+        <div class="pager__buttons">
+            <button type="button" disabled>Previous</button>
+            <button type="button" data-mock-label="Next page">Next</button>
+        </div>
+    </footer>
+</div>

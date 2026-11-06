@@ -1,0 +1,149 @@
+<div class="view">
+    <header class="library-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="radio-tower"></i> Live TV &middot; 64 channels</p>
+            <h1>Live TV</h1>
+            <p class="lede">What is on now, plus the next few hours across your tuners.</p>
+        </div>
+        <div class="toolbar">
+            <button class="tool-btn" type="button" data-mock-label="Channel guide">
+                <i data-lucide="calendar-days" aria-hidden="true"></i> Guide
+            </button>
+            <button class="tool-btn" type="button" data-mock-label="Recordings">
+                <i data-lucide="circle-dot" aria-hidden="true"></i> Recordings
+            </button>
+            <button class="tool-btn" type="button" data-mock-label="Filter channels">
+                <i data-lucide="filter" aria-hidden="true"></i> Filter
+            </button>
+        </div>
+    </header>
+
+    <section class="live-hero">
+        <div class="live-hero__art" style="--poster: linear-gradient(145deg, #3b2a1f, #0b0806)">
+            <span class="live-badge">Live now</span>
+            <span class="poster__art"><i data-lucide="radio-tower"></i></span>
+            <span class="poster__title">Planet Earth III</span>
+        </div>
+        <div class="live-hero__content">
+            <p class="eyebrow" style="color: var(--lime); margin-bottom: 9px">
+                <i data-lucide="clock" aria-hidden="true"></i> 20:00–21:00 &middot; BBC One HD
+            </p>
+            <h2>Planet Earth III</h2>
+            <p>Episode 4 &middot; Freshwater. Rivers carve paths across every continent, connecting mountains to oceans.</p>
+            <div class="progress"><span style="width: 46%"></span></div>
+            <div class="head-actions" style="padding: 0">
+                <a class="btn btn--lime" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="play" aria-hidden="true"></i> Watch live
+                </a>
+                <button class="btn btn--ghost-light" type="button" data-mock-label="Record">
+                    <i data-lucide="circle-dot" aria-hidden="true"></i> Record
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="row" style="margin-top: 0">
+        <div class="row__head">
+            <h2 class="row__title">On now</h2>
+            <button class="row__more" type="button" data-mock-label="All channels" style="background: none; border: 0; cursor: pointer">
+                All channels <i data-lucide="chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="rail rail--channels">
+            <a class="channel-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="channel-card__top">
+                    <span class="channel-logo">BBC</span>
+                    <span class="channel-card__name">BBC One HD<small>Channel 101</small></span>
+                </span>
+                <span class="channel-card__program">Planet Earth III</span>
+                <span class="progress"><span style="width: 46%"></span></span>
+                <span class="channel-card__time">20:00–21:00 &middot; 28 min left</span>
+            </a>
+            <a class="channel-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="channel-card__top">
+                    <span class="channel-logo">ITV</span>
+                    <span class="channel-card__name">ITV 1<small>Channel 103</small></span>
+                </span>
+                <span class="channel-card__program">The Chase</span>
+                <span class="progress"><span style="width: 62%"></span></span>
+                <span class="channel-card__time">19:30–20:30 &middot; 12 min left</span>
+            </a>
+            <a class="channel-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="channel-card__top">
+                    <span class="channel-logo">C4</span>
+                    <span class="channel-card__name">Channel 4<small>Channel 104</small></span>
+                </span>
+                <span class="channel-card__program">Grand Designs</span>
+                <span class="progress"><span style="width: 18%"></span></span>
+                <span class="channel-card__time">20:00–21:15 &middot; 61 min left</span>
+            </a>
+            <a class="channel-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="channel-card__top">
+                    <span class="channel-logo">SKY</span>
+                    <span class="channel-card__name">Sky Sports Main<small>Channel 401</small></span>
+                </span>
+                <span class="channel-card__program">Premier League Live</span>
+                <span class="progress"><span style="width: 71%"></span></span>
+                <span class="channel-card__time">19:00–21:45 &middot; 24 min left</span>
+            </a>
+            <a class="channel-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="channel-card__top">
+                    <span class="channel-logo">CNN</span>
+                    <span class="channel-card__name">CNN International<small>Channel 506</small></span>
+                </span>
+                <span class="channel-card__program">The Situation Room</span>
+                <span class="progress"><span style="width: 40%"></span></span>
+                <span class="channel-card__time">20:00–21:00 &middot; 34 min left</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="row__head">
+            <h2 class="row__title">Up next</h2>
+            <span class="row__more">Tonight &middot; 20:00 onwards</span>
+        </div>
+        <div class="schedule">
+            <div class="schedule-row">
+                <span class="schedule-row__time">21:00</span>
+                <span class="schedule-row__body">
+                    <span class="schedule-row__title">The Traitors</span>
+                    <span class="schedule-row__meta">Reality &middot; New episode &middot; 59 min</span>
+                </span>
+                <span class="schedule-row__channel">BBC One HD</span>
+            </div>
+            <div class="schedule-row">
+                <span class="schedule-row__time">21:00</span>
+                <span class="schedule-row__body">
+                    <span class="schedule-row__title">The Grand Tour</span>
+                    <span class="schedule-row__meta">Motoring &middot; Season 6 finale &middot; 62 min</span>
+                </span>
+                <span class="schedule-row__channel">Prime</span>
+            </div>
+            <div class="schedule-row">
+                <span class="schedule-row__time">21:30</span>
+                <span class="schedule-row__body">
+                    <span class="schedule-row__title">News at Ten</span>
+                    <span class="schedule-row__meta">News &middot; 30 min</span>
+                </span>
+                <span class="schedule-row__channel">ITV 1</span>
+            </div>
+            <div class="schedule-row">
+                <span class="schedule-row__time">22:00</span>
+                <span class="schedule-row__body">
+                    <span class="schedule-row__title">Blade Runner 2049</span>
+                    <span class="schedule-row__meta">Film &middot; Sci-Fi &middot; 164 min</span>
+                </span>
+                <span class="schedule-row__channel">Channel 4</span>
+            </div>
+            <div class="schedule-row">
+                <span class="schedule-row__time">22:15</span>
+                <span class="schedule-row__body">
+                    <span class="schedule-row__title">Match of the Day</span>
+                    <span class="schedule-row__meta">Sport &middot; Highlights &middot; 75 min</span>
+                </span>
+                <span class="schedule-row__channel">BBC One HD</span>
+            </div>
+        </div>
+    </section>
+</div>

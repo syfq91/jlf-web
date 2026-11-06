@@ -1,0 +1,64 @@
+<div class="view player" style="--scene: linear-gradient(135deg, #263a1d, #050706 72%)">
+    <span class="player__scene" aria-hidden="true"></span>
+
+    <div class="player__top">
+        <div class="player__top-left">
+            <a class="player__back" href="/home" hx-get="/home" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true" aria-label="Back to home">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+            </a>
+            <div class="player__title-block">
+                <h1>Dune: Part Two</h1>
+                <p>2024 &middot; Sci-Fi &middot; 2h 46m &middot; 4K HDR</p>
+            </div>
+        </div>
+        <div class="player__top-actions">
+            <button class="icon-btn" type="button" data-mock-label="Cast" aria-label="Cast to device">
+                <i data-lucide="cast" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn" type="button" data-mock-label="Subtitles" aria-label="Subtitles">
+                <i data-lucide="subtitles" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn" type="button" data-mock-label="More" aria-label="More options">
+                <i data-lucide="more-horizontal" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <button class="player__play" type="button" data-mock-label="Play / pause" aria-label="Play">
+        <i data-lucide="play" aria-hidden="true"></i>
+    </button>
+
+    <button class="player__skip" type="button" data-mock-label="Skip intro">
+        Skip intro <i data-lucide="skip-forward" aria-hidden="true"></i>
+    </button>
+
+    <div class="player__bottom">
+        <div class="player__timeline" aria-hidden="true"><span></span></div>
+        <div class="player__controls">
+            <button class="icon-btn" type="button" data-mock-label="Play / pause" aria-label="Pause">
+                <i data-lucide="pause" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn" type="button" data-mock-label="Previous chapter" aria-label="Previous chapter">
+                <i data-lucide="rewind" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn" type="button" data-mock-label="Forward 30 seconds" aria-label="Forward 30 seconds">
+                <i data-lucide="fast-forward" aria-hidden="true"></i>
+            </button>
+            <span class="player__time">1:02:18 / 2:46:00</span>
+            <button class="icon-btn" type="button" data-mock-label="Volume" aria-label="Volume">
+                <i data-lucide="volume-2" aria-hidden="true"></i>
+            </button>
+            <span class="player__spacer"></span>
+            <span class="player__quality">4K &middot; HDR</span>
+            <button class="icon-btn" type="button" data-mock-label="Episodes" aria-label="Episodes">
+                <i data-lucide="list-video" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn" type="button" data-mock-label="Picture in picture" aria-label="Picture in picture">
+                <i data-lucide="picture-in-picture" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn" type="button" data-mock-label="Fullscreen" aria-label="Fullscreen">
+                <i data-lucide="maximize" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="view view--center">
+    <div class="auth-panel">
+        <p class="eyebrow" style="justify-content: center"><i data-lucide="scan-line"></i> Quick Connect</p>
+        <h1>Authorise this device.</h1>
+        <p class="lede">Enter the code shown on your TV or console to sign it in as Maya Chen.</p>
+
+        <form data-mock>
+            <div class="code-row">
+                <input class="code-box" type="text" inputmode="text" maxlength="1" value="K" aria-label="Code character 1">
+                <input class="code-box" type="text" inputmode="text" maxlength="1" value="7" aria-label="Code character 2">
+                <input class="code-box" type="text" inputmode="text" maxlength="1" value="Q" aria-label="Code character 3">
+                <input class="code-box" type="text" inputmode="text" maxlength="1" value="3" aria-label="Code character 4">
+                <input class="code-box" type="text" inputmode="text" maxlength="1" value="R" aria-label="Code character 5">
+                <input class="code-box" type="text" inputmode="text" maxlength="1" value="9" aria-label="Code character 6">
+            </div>
+
+            <div class="auth-panel__actions">
+                <button class="btn btn--primary btn--block" type="submit">
+                    <i data-lucide="shield-check" aria-hidden="true"></i> Authorise device
+                </button>
+                <a class="btn btn--ghost btn--block" href="/mypreferencesmenu" hx-get="/mypreferencesmenu" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    Cancel
+                </a>
+            </div>
+        </form>
+
+        <div class="device-card">
+            <span class="device-card__icon"><i data-lucide="monitor-play" aria-hidden="true"></i></span>
+            <span class="device-card__body">
+                <strong>Living room TV</strong>
+                <small>Jellyfin for Android TV &middot; requested 2 minutes ago</small>
+            </span>
+            <span class="status-dot" aria-hidden="true"></span>
+        </div>
+
+        <p class="fineprint">Only authorise devices you recognise. You can revoke access later from Settings → Devices.</p>
+    </div>
+</div>

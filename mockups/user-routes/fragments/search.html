@@ -1,0 +1,164 @@
+<div class="view">
+    <header class="search-head">
+        <p class="eyebrow"><i data-lucide="search"></i> Search everything</p>
+        <h1>Find something to watch, read, or play.</h1>
+
+        <div class="search-box">
+            <i data-lucide="search" aria-hidden="true"></i>
+            <input type="search" id="search-input" value="dune" placeholder="Titles, people, genres, studios…" aria-label="Search your library">
+            <span class="search-spinner" aria-hidden="true"><i data-lucide="loader-circle"></i></span>
+            <button class="search-clear" type="button" data-mock-label="Clear search">Clear</button>
+        </div>
+        <p class="search-hint">Showing results for <strong>“dune”</strong> &middot; 24 matches across 4 libraries</p>
+    </header>
+
+    <section class="suggestion-block">
+        <div class="suggestion-block__head">
+            <h2>Suggestions</h2>
+            <span>Refine your search</span>
+        </div>
+        <div class="chips">
+            <button class="chip" type="button" data-mock-label="Dune: Part Two">Dune: Part Two</button>
+            <button class="chip" type="button" data-mock-label="Dune (1984)">Dune (1984)</button>
+            <button class="chip" type="button" data-mock-label="Dune Messiah">Dune Messiah</button>
+            <button class="chip" type="button" data-mock-label="Frank Herbert">Frank Herbert</button>
+            <button class="chip" type="button" data-mock-label="Denis Villeneuve">Denis Villeneuve</button>
+            <button class="chip" type="button" data-mock-label="Sci-Fi">Sci-Fi</button>
+        </div>
+    </section>
+
+    <section class="result-block">
+        <div class="result-block__head">
+            <h2>Movies</h2>
+            <span>3 results</span>
+        </div>
+        <div class="rail">
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster" style="--poster: linear-gradient(160deg, #4a3a24, #15120c)">
+                    <span class="poster__art"><i data-lucide="film"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Dune: Part Two</span>
+                    <span class="poster__badge">4K</span>
+                </span>
+                <span class="media-card__title">Dune: Part Two</span>
+                <span class="media-card__meta">2024 &middot; Sci-Fi</span>
+            </a>
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster" style="--poster: linear-gradient(160deg, #44401f, #141206)">
+                    <span class="poster__art"><i data-lucide="film"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Dune</span>
+                </span>
+                <span class="media-card__title">Dune</span>
+                <span class="media-card__meta">2021 &middot; Sci-Fi</span>
+            </a>
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster" style="--poster: linear-gradient(160deg, #3d2a2a, #120b0b)">
+                    <span class="poster__art"><i data-lucide="film"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Dune</span>
+                </span>
+                <span class="media-card__title">Dune (1984)</span>
+                <span class="media-card__meta">1984 &middot; Sci-Fi</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="result-block">
+        <div class="result-block__head">
+            <h2>Shows</h2>
+            <span>2 results</span>
+        </div>
+        <div class="rail">
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster" style="--poster: linear-gradient(160deg, #243b33, #0a120f)">
+                    <span class="poster__art"><i data-lucide="tv"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Dune: Prophecy</span>
+                    <span class="poster__badge">S1</span>
+                </span>
+                <span class="media-card__title">Dune: Prophecy</span>
+                <span class="media-card__meta">1 season &middot; HBO</span>
+            </a>
+            <a class="media-card" href="/video" hx-get="/video" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="poster" style="--poster: linear-gradient(160deg, #2c2440, #0d0a14)">
+                    <span class="poster__art"><i data-lucide="tv"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Frank Herbert's Dune</span>
+                </span>
+                <span class="media-card__title">Frank Herbert's Dune</span>
+                <span class="media-card__meta">1 season &middot; Sci-Fi</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="result-block">
+        <div class="result-block__head">
+            <h2>Music</h2>
+            <span>4 results</span>
+        </div>
+        <div class="rail">
+            <a class="media-card" href="/music">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #443a1a, #140f05)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Dune (OST)</span>
+                </span>
+                <span class="media-card__title">Dune (Original Score)</span>
+                <span class="media-card__meta">Hans Zimmer &middot; 2021</span>
+            </a>
+            <a class="media-card" href="/music">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #3f2a2a, #120b0b)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Dune: Part Two (OST)</span>
+                </span>
+                <span class="media-card__title">Dune: Part Two (Original Score)</span>
+                <span class="media-card__meta">Hans Zimmer &middot; 2024</span>
+            </a>
+            <a class="media-card" href="/music">
+                <span class="poster poster--square" style="--poster: linear-gradient(145deg, #1f3c44, #071114)">
+                    <span class="poster__art"><i data-lucide="disc-3"></i></span>
+                    <span class="poster__play"><span><i data-lucide="play"></i></span></span>
+                    <span class="poster__title">Desert Sessions</span>
+                </span>
+                <span class="media-card__title">Desert Sessions</span>
+                <span class="media-card__meta">Various Artists &middot; 2024</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="result-block">
+        <div class="result-block__head">
+            <h2>People &amp; studios</h2>
+            <span>5 results</span>
+        </div>
+        <div class="people-row">
+            <a class="person-card" href="/search">
+                <span class="avatar avatar--lg" aria-hidden="true">FV</span>
+                <span class="person-card__name">Denis Villeneuve</span>
+                <span class="person-card__role">Director</span>
+            </a>
+            <a class="person-card" href="/search">
+                <span class="avatar avatar--lg" aria-hidden="true">TC</span>
+                <span class="person-card__name">Timothée Chalamet</span>
+                <span class="person-card__role">Actor</span>
+            </a>
+            <a class="person-card" href="/search">
+                <span class="avatar avatar--lg" aria-hidden="true">ZR</span>
+                <span class="person-card__name">Zendaya</span>
+                <span class="person-card__role">Actor</span>
+            </a>
+            <a class="person-card" href="/search">
+                <span class="avatar avatar--lg" aria-hidden="true">HZ</span>
+                <span class="person-card__name">Hans Zimmer</span>
+                <span class="person-card__role">Composer</span>
+            </a>
+            <a class="person-card" href="/search">
+                <span class="avatar avatar--lg" aria-hidden="true">LE</span>
+                <span class="person-card__name">Legendary</span>
+                <span class="person-card__role">Studio</span>
+            </a>
+        </div>
+    </section>
+</div>

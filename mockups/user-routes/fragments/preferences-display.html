@@ -1,0 +1,153 @@
+<div class="view view--settings">
+    <header class="page-head">
+        <div>
+            <p class="eyebrow"><i data-lucide="monitor"></i> Settings &middot; Display</p>
+            <h1>Display</h1>
+            <p class="lede">Theme, layout, and language for this browser. Changes preview instantly.</p>
+        </div>
+        <div class="head-actions">
+            <a class="btn btn--ghost" href="/mypreferencesmenu" hx-get="/mypreferencesmenu" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <i data-lucide="arrow-left" aria-hidden="true"></i> All settings
+            </a>
+        </div>
+    </header>
+
+    <div class="settings-shell">
+        <nav class="settings-subnav" aria-label="Preference sections">
+            <a href="/mypreferencesdisplay" class="is-active">Display</a>
+            <a href="/mypreferencesdisplay">Home screen</a>
+            <a href="/mypreferencesdisplay">Playback</a>
+            <a href="/mypreferencesdisplay">Subtitles</a>
+            <a href="/userprofile" hx-get="/userprofile" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">Profile</a>
+        </nav>
+
+        <form class="settings-form" data-mock>
+            <section class="panel">
+                <h2>Appearance</h2>
+                <p class="panel__lede">Pick a theme and set how dense the interface feels on this device.</p>
+
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="theme">Theme</label>
+                        <div class="select-wrap">
+                            <select id="theme">
+                                <option>Jellyfin default</option>
+                                <option selected>Warm paper</option>
+                                <option>Midnight</option>
+                                <option>Match system</option>
+                            </select>
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="language">Interface language</label>
+                        <div class="select-wrap">
+                            <select id="language">
+                                <option selected>English (UK)</option>
+                                <option>English (US)</option>
+                                <option>Deutsch</option>
+                                <option>Français</option>
+                                <option>日本語</option>
+                            </select>
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field" style="margin-top: 15px">
+                    <span class="field-label">Layout density</span>
+                    <div class="segmented">
+                        <label><input type="radio" name="density"><span>Comfortable</span></label>
+                        <label><input type="radio" name="density" checked><span>Cosy</span></label>
+                        <label><input type="radio" name="density"><span>Compact</span></label>
+                    </div>
+                </div>
+
+                <div class="field" style="margin-top: 15px">
+                    <span class="field-label">Poster size</span>
+                    <div class="segmented">
+                        <label><input type="radio" name="poster"><span>Small</span></label>
+                        <label><input type="radio" name="poster" checked><span>Medium</span></label>
+                        <label><input type="radio" name="poster"><span>Large</span></label>
+                        <label><input type="radio" name="poster"><span>Cinema</span></label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Behaviour</h2>
+                <p class="panel__lede">Toggles that change how pages load and what is remembered between visits.</p>
+
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Backdrops</span>
+                        <span class="switch-row__desc">Show fanart behind detail pages and the home hero.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox" checked><span></span></label>
+                </div>
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Remember library view</span>
+                        <span class="switch-row__desc">Restore the last sort, filter, and grid layout per library.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox" checked><span></span></label>
+                </div>
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Animate transitions</span>
+                        <span class="switch-row__desc">Fade between views and animate rails on load.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox" checked><span></span></label>
+                </div>
+                <div class="switch-row">
+                    <div class="switch-row__copy">
+                        <span class="switch-row__title">Show media details on hover</span>
+                        <span class="switch-row__desc">Reveal play buttons and metadata when pointing at a card.</span>
+                    </div>
+                    <label class="switch"><input type="checkbox"><span></span></label>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Screensaver</h2>
+                <p class="panel__lede">Used when the app is idle on a TV or wall display.</p>
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="screensaver">Screensaver</label>
+                        <div class="select-wrap">
+                            <select id="screensaver">
+                                <option selected>Jellyfin logo</option>
+                                <option>Backdrop gallery</option>
+                                <option>Clock</option>
+                                <option>None</option>
+                            </select>
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="screensaver-time">Start after</label>
+                        <div class="select-wrap">
+                            <select id="screensaver-time">
+                                <option>1 minute</option>
+                                <option selected>5 minutes</option>
+                                <option>10 minutes</option>
+                                <option>30 minutes</option>
+                            </select>
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="save-bar">
+                <button class="btn btn--primary" type="submit">
+                    <i data-lucide="check" aria-hidden="true"></i> Save changes
+                </button>
+                <button class="btn btn--ghost" type="button" data-mock-label="Reset display settings">
+                    Reset to defaults
+                </button>
+                <span class="save-bar__note">Saved to this device only.<br>Applies immediately after saving.</span>
+            </div>
+        </form>
+    </div>
+</div>

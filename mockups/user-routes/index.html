@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} &middot; Jellyfin user routes</title>
+    <meta name="description" content="Visual htmx mockup of Jellyfin Web's authenticated modern user routes.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23c9ff4d'/><path d='M10 10h12v3H10zm0 6h12v3H10zm0 6h8v2h-8z' fill='%23151a15'/></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@1.66.0/dist/umd/lucide.min.js" defer></script>
+    <script src="/app.js" defer></script>
+</head>
+<body hx-indicator=".loadbar">
+    <div class="loadbar" aria-hidden="true"></div>
+    <div class="sidebar-scrim" data-sidebar-close aria-hidden="true"></div>
+
+    <div class="app">
+        <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+            <a class="sidebar__brand" href="/home" hx-get="/home" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                <span class="brand-mark"><i data-lucide="clapperboard" aria-hidden="true"></i></span>
+                <span>
+                    <strong>Jellyfin</strong>
+                    <small>Maya&rsquo;s library</small>
+                </span>
+            </a>
+
+            <nav class="sidebar__nav">
+                <p class="sidebar__label">Discover</p>
+                <a href="/home" data-route="/home" hx-get="/home" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="home" aria-hidden="true"></i><span>Home</span>
+                </a>
+                <a href="/search" data-route="/search" hx-get="/search" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="search" aria-hidden="true"></i><span>Search</span>
+                </a>
+
+                <p class="sidebar__label">Libraries</p>
+                <a href="/movies" data-route="/movies" hx-get="/movies" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="clapperboard" aria-hidden="true"></i><span>Movies</span>
+                </a>
+                <a href="/tv" data-route="/tv" hx-get="/tv" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="tv" aria-hidden="true"></i><span>TV Shows</span>
+                </a>
+                <a href="/music" data-route="/music" hx-get="/music" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="disc-3" aria-hidden="true"></i><span>Music</span>
+                </a>
+                <a href="/books" data-route="/books" hx-get="/books" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="book-open" aria-hidden="true"></i><span>Books</span>
+                </a>
+                <a href="/livetv" data-route="/livetv" hx-get="/livetv" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="radio-tower" aria-hidden="true"></i><span>Live TV</span>
+                </a>
+                <a href="/boxsets" data-route="/boxsets" hx-get="/boxsets" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="layers" aria-hidden="true"></i><span>Collections</span>
+                </a>
+                <a href="/playlists" data-route="/playlists" hx-get="/playlists" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="list-music" aria-hidden="true"></i><span>Playlists</span>
+                </a>
+
+                <p class="sidebar__label">More</p>
+                <a href="/musicvideos" data-route="/musicvideos" hx-get="/musicvideos" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="music-2" aria-hidden="true"></i><span>Music Videos</span>
+                </a>
+                <a href="/homevideos" data-route="/homevideos" hx-get="/homevideos" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="video" aria-hidden="true"></i><span>Home Videos</span>
+                </a>
+                <a href="/mixed" data-route="/mixed" hx-get="/mixed" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="shapes" aria-hidden="true"></i><span>Mixed Media</span>
+                </a>
+
+                <p class="sidebar__label">Account</p>
+                <a href="/mypreferencesmenu" data-route="/mypreferencesmenu" hx-get="/mypreferencesmenu" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="settings" aria-hidden="true"></i><span>Settings</span>
+                </a>
+                <a href="/mypreferencesdisplay" data-route="/mypreferencesdisplay" hx-get="/mypreferencesdisplay" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="monitor" aria-hidden="true"></i><span>Display</span>
+                </a>
+                <a href="/userprofile" data-route="/userprofile" hx-get="/userprofile" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true">
+                    <i data-lucide="user-round" aria-hidden="true"></i><span>Profile</span>
+                </a>
+            </nav>
+
+            <div class="sidebar__user">
+                <span class="avatar avatar--sm" aria-hidden="true">M</span>
+                <span class="sidebar__user-text">
+                    <strong>Maya Chen</strong>
+                    <small>Administrator</small>
+                </span>
+                <button class="icon-btn icon-btn--ghost" type="button" data-mock-label="Sign out" aria-label="Sign out">
+                    <i data-lucide="log-out" aria-hidden="true"></i>
+                </button>
+            </div>
+        </aside>
+
+        <div class="workspace">
+            <header class="appbar">
+                <div class="appbar__left">
+                    <button class="icon-btn appbar__menu" type="button" data-sidebar-toggle aria-label="Open navigation">
+                        <i data-lucide="panel-left" aria-hidden="true"></i>
+                    </button>
+                    <a class="icon-btn appbar__back" href="/home" hx-get="/home" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true" aria-label="Back to home">
+                        <i data-lucide="arrow-left" aria-hidden="true"></i>
+                    </a>
+                    <span class="appbar__crumb" id="crumb">Home</span>
+                </div>
+                <div class="appbar__actions">
+                    <a class="icon-btn" href="/search" hx-get="/search" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true" aria-label="Search">
+                        <i data-lucide="search" aria-hidden="true"></i>
+                    </a>
+                    <button class="icon-btn icon-btn--dot" type="button" data-mock-label="Notifications" aria-label="Notifications">
+                        <i data-lucide="bell" aria-hidden="true"></i>
+                        <span class="dot-badge" aria-hidden="true"></span>
+                    </button>
+                    <a class="avatar avatar--appbar" href="/userprofile" hx-get="/userprofile" hx-target="#screen" hx-swap="innerHTML" hx-push-url="true" aria-label="Open profile">M</a>
+                </div>
+            </header>
+
+            <main id="screen" class="{{screen_class}}">{{screen}}</main>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
